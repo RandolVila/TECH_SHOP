@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de costos</title>
+    <link rel = "stylesheet" href = "estilo.css" type = "text/css"/>
+    <style>
+        /* Estilos opcionales para mejorar la apariencia del formulario */
+        fieldset {
+            border: 2px solid #5167e4;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src = "C:\Users\jrva_\Desktop\TECH_SHOP/logoEpsom.svg" id = "logo"/>
+        <button id = "menu">MENU</button>
+        
+    </div>
+    <div>
+        <button id = "menu">MENU</button>
+    </div>
+    <h1>Registro de Pagos</h1>
+    <button onclick="desplazar('servicios')">Servicios públicos</button>
+    <button onclick="desplazar('trabajadores')">Pago a trabajadores</button>
+    <button onclick="desplazar('proveedores')">Pago a proveedores</button>
+    <button onclick="desplazar('mantenimiento')">Gastos de Mantenimiento</button><br><br>
+
+    <script>
+        function desplazar(id) {
+            var fieldset = document.getElementById(id);
+            if (fieldset) {
+                fieldset.scrollIntoView({ behavior: "smooth" }); // Desplazar suavemente hacia el fieldset
+            }
+        }
+    </script>
+
+    <fieldset id = "servicios">
+        <legend>Servicios públicos</legend>
+        <button>Agregar servicio</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de servicio</th>
+                    <th>Monto</th>
+                    <th>Fecha Vcto. Recibo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Luz electrica</td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td>Agua y alcantarillado</td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td>Servicio de Internet</td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </fieldset><br>
+
+    <fieldset id = "trabajadores">
+        <legend>Pago a trabajadores</legend>
+        <button>Agregar trabajador</button>
+         <table>
+            <thead>
+                <tr>
+                    <th>Nombres y Apellidos</th>
+                    <th>Monto</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset><br>
+    
+    <fieldset id = "proveedores">
+        <legend>Pago a proveedores</legend>
+        <button>Agregar proveedor</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombres de proveedor</th>
+                    <th>Monto</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset><br>
+
+    <fieldset id = "mantenimiento">
+        <button>Agregar item</button>
+        <legend>Gastos de Mantenimiento</legend>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+                <tr>
+                    <td><input></td>
+                    <td><input></td>
+                    <td><input></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset><br>
+
+    <button id = "registrar"><b>REGISTRAR</b></button>
+   
+</body>
+</html>

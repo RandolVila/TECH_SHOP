@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(201, 201, 201);
+}
+h1 {
+    text-align: center;
+}
+#logo {
+    text-align: left;
+}
+#menu {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#registrar{
+    font-family: "Trebuchet MS";
+}
